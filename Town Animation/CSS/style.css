@@ -85,3 +85,69 @@ section .people .family {
   left: 0%;
   bottom: 0px;
 }
+
+/* 놀이기구 회전 */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 배경 하늘색을 변경 */
+@keyframes sky {
+  0% {
+    background-color: #b08fcc;
+  }
+  25% {
+    background-color: #b1e1e2;
+  }
+  50% {
+    background-color: #fcd2e2;
+  }
+  75% {
+    background-color: #636888;
+  }
+  100% {
+    background-color: #b08fcc;
+  }
+}
+
+/* 밤에 특정 요소를 숨기기 */
+@keyframes day {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 사람과 구름을 오른쪽으로 이동 */
+@keyframes flow {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
