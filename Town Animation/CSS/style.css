@@ -10,6 +10,7 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: #b1e1e2;
+  animation: sky linear 10s infinite;
 }
 h1 {
   width: 1000px;
@@ -20,6 +21,7 @@ h1 {
   font: 92px/1 "Poiret one";
   color: #fff;
   text-align: center;
+  animation: day linear 10s infinite;
 }
 section {
   width: 1000px;
@@ -40,16 +42,19 @@ section .sky .sun {
   left: 50%;
   margin-left: -100px;
   transform-origin: center 500px; /* 태양의 중심축을 아래쪽으로 500만큼 이동 */
+  animation: sun linear 10s infinite;
 }
 section .sky .cloud1 {
   position: absolute;
   top: -30px;
   left: 10%;
+  animation: flow linear 10s infinite;
 }
 section .sky .cloud2 {
   position: absolute;
   top: 20px;
   left: 0%;
+  animation: flow linear 10s infinite;
 }
 section .town .circle {
   position: absolute;
@@ -57,6 +62,7 @@ section .town .circle {
   left: 50%;
   margin-left: -165px;
   opacity: 0.7;
+  animation: rotation linear 10s infinite;
 }
 section .town .night {
   position: absolute;
@@ -79,11 +85,13 @@ section .people .man {
   position: absolute;
   left: 0%;
   bottom: 0px;
+  animation: flow linear 5s infinite;
 }
 section .people .family {
   position: absolute;
   left: 0%;
   bottom: 0px;
+  animation: flow linear 5s infinite;
 }
 
 /* 놀이기구 회전 */
@@ -112,6 +120,30 @@ section .people .family {
   }
   100% {
     background-color: #b08fcc;
+  }
+}
+
+/* 태양이 회전하는 키프레임 */
+@keyframes sun {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(-30deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(30deg);
+  }
+  75% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-90deg);
   }
 }
 
