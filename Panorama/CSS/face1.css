@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* face1 */
+.wrap #circle .face1 {
+  display: block;
+}
+.wrap #circle .face1 .inner > div {
+  width: 49%;
+  height: 32%;
+  float: left;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.wrap #circle .face1 .inner > div p i {
+  font-size: 100px;
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+.wrap #circle .face1 .inner > div h2 {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+.wrap #circle .face1 .inner > div:nth-of-type(odd) {
+  margin-right: 10px;
+}

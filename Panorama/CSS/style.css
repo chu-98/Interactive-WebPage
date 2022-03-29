@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 * {
   margin: 0;
   padding: 0;
@@ -44,35 +43,10 @@ body {
   margin-left: -300px;
 }
 
-/* face1 */
-.wrap #circle .face1 {
-  display: block;
-}
-.wrap #circle .face1 .inner > div {
-  width: 49%;
-  height: 32%;
-  float: left;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.wrap #circle .face1 .inner > div p i {
-  font-size: 100px;
-  transition: all 0.5s;
-  opacity: 0.7;
-}
-.wrap #circle .face1 .inner > div h2 {
-  margin-top: 20px;
-  letter-spacing: 2px;
-  transition: all 0.5s;
-}
-.wrap #circle .face1 .inner > div:nth-of-type(odd) {
-  margin-right: 10px;
-}
 .wrap #circle article .inner > div:hover h2 {
   color: lightcyan;
   text-shadow: 0px 0px 10px aqua;
 }
-
 .wrap #circle article .inner > div:hover i {
   color: lightcyan;
   text-shadow: 0px 0px 10px aqua;
