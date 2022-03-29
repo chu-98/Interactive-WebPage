@@ -80,6 +80,7 @@ section .people {
   position: absolute;
   top: 0px;
   left: 0px;
+  animation: day linear 10s infinite;
 }
 section .people .man {
   position: absolute;
