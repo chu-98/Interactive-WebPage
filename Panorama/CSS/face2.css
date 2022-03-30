@@ -1,8 +1,5 @@
 @charset "utf-8";
 /* face2 */
-.wrap #circle .face2 {
-  display: block;
-}
 .wrap #circle .face2 .inner > div {
   width: 100%;
   height: 100%;

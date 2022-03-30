@@ -1,11 +1,8 @@
 @charset "utf-8";
 /* face1 */
-.wrap #circle .face1 {
-  display: block;
-}
 .wrap #circle .face1 .inner > div {
-  width: 49%;
-  height: 32%;
+  width: 290px;
+  height: 230px;
   float: left;
   margin-bottom: 10px;
   text-align: center;
