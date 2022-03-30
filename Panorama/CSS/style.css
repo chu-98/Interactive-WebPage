@@ -60,7 +60,6 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  display: none;
 }
 .wrap #circle article h1 {
   position: absolute;
@@ -95,4 +94,30 @@ body {
   background: rgba(255, 255, 255, 0.15);
   transform: scale(1.03);
   opacity: 1;
+}
+
+/* 3D 배치 */
+.face1 {
+  transform: rotateY(0deg);
+}
+.face2 {
+  transform: rotateY(45deg);
+}
+.face3 {
+  transform: rotateY(90deg);
+}
+.face4 {
+  transform: rotateY(135deg);
+}
+.face5 {
+  transform: rotateY(180deg);
+}
+.face6 {
+  transform: rotateY(225deg);
+}
+.face7 {
+  transform: rotateY(270deg);
+}
+.face8 {
+  transform: rotateY(315deg);
 }
