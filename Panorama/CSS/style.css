@@ -72,7 +72,7 @@ body {
   transition: all 0.5s;
 }
 .wrap #circle article:hover h1 {
-  top: -40px;
+  top: -47px;
   opacity: 1;
 }
 .wrap #circle article .inner {

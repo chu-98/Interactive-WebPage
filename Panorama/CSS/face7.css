@@ -16,8 +16,9 @@
   width: auto;
   height: 100%;
   top: 0px;
-  left: 50%;
   position: absolute;
+  left: 0%;
+  object-fit: cover;
   opacity: 0.9;
 }
 .wrap #circle .face7 .inner > div > div h2 {
