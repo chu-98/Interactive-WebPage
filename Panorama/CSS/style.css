@@ -34,6 +34,15 @@ body {
   position: fixed;
   opacity: 0.5;
 }
+
+@keyframes ani {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 .wrap #circle {
   width: 600px;
   height: 700px;
@@ -42,6 +51,8 @@ body {
   left: 50%;
   margin-top: -400px;
   margin-left: -300px;
+  transform-style: preserve-3d;
+  animation: ani linear 20s infinite;
 }
 
 .wrap #circle article {
