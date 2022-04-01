@@ -24,9 +24,9 @@ main {
 
 /* Header */
 main header {
-  width: 20%;
+  width: 13%;
   height: 100%;
-  padding: 10vh 5vh;
+  padding: 10vh 6vh;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -39,7 +39,7 @@ main header h1 {
   color: #fff;
 }
 main header h1 i {
-  font-size: 5vw;
+  font-size: 6vw;
   margin-bottom: 15px;
 }
 main header h1 span {
@@ -173,4 +173,52 @@ main section article:hover .inner figure {
   height: 20vh;
   filter: saturate(150%);
   transform: translateY(3vh);
+}
+
+main aside {
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  opacity: 0; /* 투명도 0으로 비활성화 */
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 20vh 7vw 14vh 20vw;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+}
+main aside.on {
+  /* 클래스 on이 붙으면! */
+  opacity: 1;
+  left: 0%;
+}
+main aside .txt {
+  width: 25%;
+  height: 100%;
+}
+main aside .txt h1 {
+  font: normal 6vw/1 "Alegreya Sans SC";
+  color: #ddd;
+  margin-bottom: 20px;
+}
+main aside .txt p {
+  font: 1.1vw/1.3 "arial";
+  color: #666;
+  margin-bottom: 60px;
+}
+main aside .txt span {
+  cursor: pointer;
+  color: orange;
+}
+main aside figure {
+  width: 72%;
+  height: 100%;
+}
+main aside figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
