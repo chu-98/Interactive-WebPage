@@ -21,6 +21,8 @@ main {
   background: #282828;
   display: flex;
 }
+
+/* Header */
 main header {
   width: 20%;
   height: 100%;
@@ -47,13 +49,24 @@ main header address {
   font: normal 11px/1.2 "arial";
   color: #888;
 }
+
+/* Nav */
 main nav {
   position: absolute;
   top: 10vh;
   right: 5vw;
   z-index: 3;
-  border: 10px solid aqua;
 }
+main nav ul {
+  display: flex;
+}
+main nav ul li a {
+  font-size: 18px;
+  color: #bbb;
+  margin-right: 20px;
+}
+
+/* Section */
 main section {
   position: relative;
   width: 80%;
