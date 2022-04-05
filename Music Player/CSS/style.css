@@ -177,3 +177,26 @@ figure section article .inner .pic .dot {
   transform: scale(2);
   opacity: 1;
 }
+
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ani2 {
+  0% {
+    transform: translateY(10%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10%) rotate(360deg);
+  }
+}
+.pic.on::after {
+  animation: ani 6s linear infinite;
+}
+.pic.on::before {
+  animation: ani2 6s linear infinite;
+}
