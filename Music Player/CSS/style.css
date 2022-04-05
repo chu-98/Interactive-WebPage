@@ -62,12 +62,11 @@ figure > p {
 
 figure section {
   /* 음악 플레이어 프레임 그룹 */
-  border: 1px solid aqua;
   width: 20vw;
   height: 65vh;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 140%;
   margin-top: -32vh;
   margin-left: -10vw;
 }
