@@ -25,6 +25,34 @@ header {
   left: 0px;
   position: absolute; /* 화면 왼쪽에 고정 */
 }
+header h1 {
+  font: bold 50px/1 "orbitron";
+  color: #fff;
+  letter-spacing: 1px;
+  left: 20px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-150%);
+}
+header h1::before {
+  content: "UI/UX DEVELOPMENT";
+  display: block;
+  font: 14px/1 "orbitron";
+  color: #fff;
+  opacity: 0.8;
+  left: 0px;
+  top: 140px;
+  position: absolute;
+}
+header h1::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  height: 1.5px;
+  width: 250px;
+  margin-top: 18px;
+}
+
 main {
   margin-left: 20%;
   box-sizing: border-box;
