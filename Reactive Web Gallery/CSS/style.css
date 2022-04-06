@@ -81,3 +81,37 @@ main {
   box-sizing: border-box;
   padding: 20px;
 }
+main section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main section article {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+.content {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 14px;
+}
+.content img {
+  width: 100%;
+}
+.content h2 {
+  margin-top: 15px;
+  font: bold 12px/1 "orbitron";
+  letter-spacing: 1px;
+  color: #444;
+  margin-bottom: 5px;
+}
+.content p {
+  font: 10px/1.2 "arial";
+  color: #777;
+  margin-bottom: 15px;
+}
