@@ -25,6 +25,43 @@
         <li class="btnStart"><i class="fa-solid fa-play"></i></li>
         <li class="btnEnd"><i class="fa-solid fa-pause"></i></li>
       </ul>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="inner"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner"></div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-button-pagination"></div>
     </div>
+    <script>
+      const swiper = new Swiper(".wrap", {
+        direction: "horizontal",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        spaceBetween: 50,
+      });
+    </script>
   </body>
 </html>
