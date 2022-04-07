@@ -61,7 +61,7 @@ a {
 }
 .swiper-slide {
   width: 500px;
-  height: 60vh;
+  height: 500px;
   position: relative;
   top: 50%;
   margin-top: -230px;
