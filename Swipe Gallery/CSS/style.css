@@ -75,3 +75,34 @@ a {
   opacity: 0.4;
   transition: 1s;
 }
+.swiper-button-prev {
+  left: auto; /* 기존 left값 초기화 */
+  right: 100px;
+  top: auto;
+  bottom: 50px;
+  filter: grayscale(100%) brightness(3);
+  transform: scale(0.5);
+}
+.swiper-button-next {
+  left: auto; /* 기존 left값 초기화 */
+  right: 60px;
+  top: auto;
+  bottom: 50px;
+  filter: grayscale(100%) brightness(3);
+  transform: scale(0.5);
+}
+.swiper-pagination-fraction {
+  bottom: auto;
+  left: auto;
+  top: 50px;
+  right: 50px;
+  width: auto;
+  font-size: 16px;
+  font-family: "orbitron";
+  color: #fff;
+  letter-spacing: 1px;
+}
+.swiper-pagination-fraction span:nth-of-type(1) {
+  font-size: 30px;
+  color: #fff;
+}
