@@ -22,3 +22,35 @@ a {
   position: relative;
   box-sizing: border-box;
 }
+.wrap h1 {
+  font-weight: normal;
+  font-size: 24px;
+  font-family: "orbitron";
+  color: #fff;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 50px;
+  top: 70px;
+}
+.wrap h1 span {
+  opacity: 0.8;
+}
+.wrap .auto {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 20;
+  display: flex;
+}
+.wrap .auto li {
+  opacity: 0.9;
+  transition: all 0.5s;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+.wrap .auto li:hover {
+  opacity: 1;
+  transform: scale(1.4);
+}
