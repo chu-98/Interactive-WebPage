@@ -52,7 +52,7 @@ body {
   margin-top: -400px;
   margin-left: -300px;
   transform-style: preserve-3d;
-  animation: ani linear 20s infinite;
+  animation: ani linear 10s infinite;
 }
 
 .wrap #circle article {

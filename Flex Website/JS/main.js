@@ -23,7 +23,6 @@ for (let el of items) {
     aside.querySelector("video").play();
     aside.classList.add("on");
   });
-  e;
   // close 요소 클릭 시
   close.addEventListener("click", () => {
     // aside 요소에 클래스 on을 제거해 비활성화하고 안쪽의 영상을 재생 정지

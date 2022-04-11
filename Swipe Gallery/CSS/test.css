@@ -1,6 +1,8 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
+/* 화면 초기화 */
 * {
   margin: 0px;
   padding: 0px;
@@ -14,14 +16,17 @@ a {
   text-decoration: none;
 }
 
+/* 전체 풀 스크린 레이아웃 */
 .wrap {
-  background: linear-gradient(45deg, #ac8bef, #2ddbdc);
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  background: linear-gradient(45deg, #ac8bef, #2ddbdc);
 }
+
+/* 제목 */
 .wrap h1 {
   font-weight: normal;
   font-size: 24px;
@@ -35,6 +40,8 @@ a {
 .wrap h1 span {
   opacity: 0.8;
 }
+
+/* 자동 재생 버튼 */
 .wrap .auto {
   position: absolute;
   bottom: 60px;
@@ -43,18 +50,19 @@ a {
 }
 .wrap .auto li {
   float: left;
-  opacity: 0.9;
-  transition: all 0.5s;
   margin-right: 20px;
   cursor: pointer;
   color: #fff;
   font-size: 20px;
+  opacity: 0.9;
+  transition: all 0.5s;
 }
 .wrap .auto li:hover {
   opacity: 1;
   transform: scale(1.4);
 }
 
+/* 기본 슬라이드 프레임 */
 .wrap .swiper-wrapper {
   width: 100%;
   height: 100%;
@@ -76,12 +84,11 @@ a {
   transition: 1s;
 }
 .wrap .swiper-wrapper .swiper-slide-active .inner {
-  /* 가운데 패널 */
   opacity: 1;
   box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
 }
-.wrap .swiper-wrapper .swiper-slide-active .inner::before,
-.wrap .swiper-wrapper .swiper-slide-active .inner::after {
+.wrap .swiper-wrapper .swiper-slide .inner::before,
+.wrap .swiper-wrapper .swiper-slide .inner::after {
   content: "";
   display: block;
   width: 100%;
@@ -90,43 +97,12 @@ a {
   top: 0px;
   left: 0px;
   opacity: 0;
+  background: #fff;
 }
 .wrap .swiper-wrapper .swiper-slide-prev .inner,
 .wrap .swiper-wrapper .swiper-slide-next .inner {
   opacity: 0.7;
 }
-.swiper-button-prev {
-  left: auto; /* 기존 left값 초기화 */
-  right: 100px;
-  top: auto;
-  bottom: 50px;
-  filter: grayscale(100%) brightness(3);
-  transform: scale(0.5);
-}
-.swiper-button-next {
-  left: auto; /* 기존 left값 초기화 */
-  right: 60px;
-  top: auto;
-  bottom: 50px;
-  filter: grayscale(100%) brightness(3);
-  transform: scale(0.5);
-}
-.swiper-pagination-fraction {
-  bottom: auto;
-  left: auto;
-  top: 50px;
-  right: 50px;
-  width: auto;
-  font-size: 16px;
-  font-family: "orbitron";
-  color: #fff;
-  letter-spacing: 1px;
-}
-.swiper-pagination-fraction span:nth-of-type(1) {
-  font-size: 30px;
-  color: #fff;
-}
-
 @keyframes ani {
   0% {
     opacity: 0;
@@ -144,8 +120,9 @@ a {
   animation: ani 1s ease 1;
 }
 .wrap .swiper-wrapper .swiper-slide-active .inner::after {
-  animation: ani 1s ease 0.3s 1;
+  animation: ani 1s ease 0.3s;
 }
+
 .wrap .swiper-wrapper .swiper-slide .inner .con {
   position: relative;
   z-index: 10;
@@ -171,13 +148,48 @@ a {
   transition: 1s 0.5s;
 }
 .wrap .swiper-wrapper .swiper-slide-active .inner .con h2::after {
-  width: 100%;
+  width: 100px;
 }
-.wrap .swiper-wrapper .swiper-slide-active .inner .con p {
+.wrap .swiper-wrapper .swiper-slide .inner .con p {
   font-weight: normal;
   font-size: 13px;
   font-family: "arial";
   line-height: 1.3;
   color: #aaa;
   letter-spacing: 1px;
+}
+
+/* 좌우 버튼  */
+.wrap .swiper-button-prev {
+  left: auto;
+  right: 100px;
+  top: auto;
+  bottom: 50px;
+  filter: grayscale(100%) brightness(3);
+  transform: scale(0.5);
+}
+.wrap .swiper-button-next {
+  left: auto;
+  right: 60px;
+  top: auto;
+  bottom: 50px;
+  filter: grayscale(100%) brightness(3);
+  transform: scale(0.5);
+}
+
+/* 페이지네이션 */
+.swiper-pagination-fraction {
+  bottom: auto;
+  top: 50px;
+  left: auto;
+  right: 50px;
+  width: auto;
+  font-size: 16px;
+  font-family: "orbitron";
+  letter-spacing: 1px;
+  color: #eee;
+}
+.swiper-pagination-fraction span:nth-of-type(1) {
+  font-size: 30px;
+  color: #fff;
 }
